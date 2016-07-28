@@ -1,0 +1,10 @@
+<paper-input label="ID 或 名字" (keyup)="searchMessage($event)"></paper-input>
+
+<vaadin-grid [items]="filteredMsg">
+    <table>
+        <colgroup>
+            <col name="msgId">
+            <col name="msgContent">
+        </colgroup>
+    </table>
+</vaadin-grid>
